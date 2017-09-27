@@ -1,0 +1,6 @@
+name: Authentication
+version: ${project.version}
+main: net.mcduels.authentication.Authentication
+authors: [MCDuels, LLC]
+description: enable authentication to allow your account to have a less chance of being compromised.
+website: mcduels.net
