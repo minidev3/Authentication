@@ -108,11 +108,11 @@ public class AuthenticationRegistration<T , V> {
                     String time = (String) object.get("timestamp");
                     int reset = (int) object.get("authentication_reset");
 
-                    sender.sendMessage("&eIdentification: &f".replace('&', '§') + id);
-                    sender.sendMessage("&eUsername: &f".replace('&', '§') + user);
-                    sender.sendMessage("&ePassword: &f".replace('&', '§') + pass);
-                    sender.sendMessage("&eReset: &f".replace('&', '§') + reset);
-                    sender.sendMessage("&eTimeStamp: &f".replace('&', '§') + time);
+                    return"&eIdentification: &f".replace('&', '§') + id + "\n"
+                            + "&eUsername: &f".replace('&', '§') + user + "\n"
+                            + "&ePassword: &f".replace('&', '§') + pass + "\n"
+                            + "&eReset: &f".replace('&', '§') + reset + "\n"
+                            + "&eTimeStamp: &f".replace('&', '§') + time;
                 } else {
 
                     sender.sendMessage(player.getName() + " wasn't found in the database! :(");
